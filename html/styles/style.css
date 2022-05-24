@@ -6,6 +6,45 @@
 }
 
 .text-check {
-  background: #62ce2c;
+  color: #62ce2c;
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.about-p {
+  text-align: center;
+  font-size: 32px;
+}
+
+.main {
+  color: #633535;
+}
+
+.footer {
+  color: #f10606;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #62ce2c;
 }
 /*# sourceMappingURL=style.css.map */

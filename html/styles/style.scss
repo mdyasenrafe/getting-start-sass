@@ -1,10 +1,50 @@
-$header-bgcolor: #62ce2c;
+@import "common";
+@import "font";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .text-check {
-  background: $header-bgcolor;
+  color: $header-bgcolor;
+  font-size: $header-fontSize;
+  margin: 10px 0;
+}
+
+@mixin para-style($size) {
+  text-align: center;
+  @if $size == sm {
+    font-size: 24px;
+  } @else if $size == md {
+    font-size: 32px;
+  } @else if $size == lg {
+    font-size: 40px;
+  }
+}
+.about-p {
+  @include para-style(md);
+}
+.main {
+  color: $main-bgcolor;
+}
+.footer {
+  color: $footer-bgcolor;
+}
+
+// navbar styling
+
+nav {
+  margin-top: 15px;
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 0 15px;
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        &:hover {
+          color: $header-bgcolor;
+        }
+      }
+    }
+  }
 }
